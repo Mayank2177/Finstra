@@ -3,12 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import google.generativeai as genai
 import os
-from serpapi import Googlesearch
+from serpapi import search as GoogleSearch
 
 gemini_api_key = os.getenv('GEMINI_API_KEY')
 SERPAPI_KEY = os.getenv('Serpapi_api_key')
 
-if not api_key:
+if not gemini_api_key:
     print("WARNING: GEMINI_API_KEY not found in environment variables!")
 else:
     print("API key loaded successfully")
