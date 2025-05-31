@@ -1,0 +1,6 @@
+uvicorn
+google-generativeai
+fastapi
+sentence-transformers
+scikit-learn
+serpapi
